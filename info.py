@@ -21,11 +21,11 @@ PORT = environ.get("PORT", "8080")
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '7049796'))
 API_HASH = environ.get('API_HASH', '1db4ace85d66d7c298fc7542359cc8f2')
-BOT_TOKEN = environ.get('BOT_TOKEN', '5189730980:AAG2AWf3QS6WjowhXy46L4JBb6SErND9B6I')
+BOT_TOKEN = environ.get('BOT_TOKEN', '2145285398:AAEvBFHqDJKH2aZ5feUCM1xkf_ujWwEnauM')
 # Bot settings
 CACHE_TIME = int(environ.get('CACHE_TIME', 9999))
 USE_CAPTION_FILTER = bool(environ.get('USE_CAPTION_FILTER', True))
-PICS = (environ.get('PICS' ,'https://telegra.ph/file/7afda20068e5632022086.jpg')).split()
+PICS = (environ.get('PICS' ,'http://telegra.ph/file/64338a006ef96803bcda8.jpg http://telegra.ph/file/68d2f541d6ea0885cbab6.jpg http://telegra.ph/file/8c3b3e31b260cacefca20.jpg http://telegra.ph/file/44e60620ede91f1ae9795.jpg')).split()
 BOT_START_TIME = time()
 
 # Admins, Channels & Users
@@ -39,7 +39,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 
 # MongoDB information
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sonet:sonet2006@cluster0.r9guf.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://bhavana:bhavana@cluster0.tybfo.mongodb.net/myFirstDatabase?retryWrites=true&w=majority")
 DATABASE_NAME = environ.get('DATABASE_NAME', "Cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Telegram_files')
 
